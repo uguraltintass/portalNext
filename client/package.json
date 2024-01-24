@@ -1,5 +1,5 @@
 {
-    "name": "video-streaming",
+    "name": "portalnext",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -63,5 +63,8 @@
     },
     "devDependencies": {
         "@openzeppelin/contracts": "^4.4.2"
+    },
+    "engines": {
+        "node": "16.20.2"
     }
 }
