@@ -22,7 +22,7 @@ import Header from '../components/general/Header';
 import Footer from '../components/general/Footer';
 import ScrollToTop from '../components/general/ScrollToTop';
 import MetaMaskLoader from '../components/general/MetaMaskLoader';
-import NetworkAlert from '../components/general/NetworkAlert';
+//import NetworkAlert from '../components/general/NetworkAlert';//
 import PreviewModal from '../components/general/PreviewModal';
 import ViewOnlyAlert from '../components/general/ViewOnlyAlert';
 import BuyVideoModal from '../components/general/BuyVideoModal';
@@ -153,7 +153,7 @@ function Layout() {
     return (
         <>
             <div className='app'>
-                {window.ethereum && networkId !== appSettings.networkId && <NetworkAlert />}
+                {window.ethereum && networkId !== appSettings.networkId /*&& <NetworkAlert />*/}
                 <Header />
                 <div id='main' className='layout-horizontal z-index-20 position-relative'>
                     <div className='content-wrapper'>
