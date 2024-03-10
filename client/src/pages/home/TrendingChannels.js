@@ -17,7 +17,7 @@ function TrendingChannels() {
                 <div className='container pb-5'>
                     <h2 className='text-lg lh-1 mb-3 d-flex align-items-center'>
                         <HiPresentationChartLine size='3.5rem' className='text-primary' />
-                        <span className='ms-2'>Trending Channels</span>
+                        <span className='ms-2'>Trending Games</span>
                     </h2>
                     <div className='row mb-4'>
                         <div className='col-lg-6'>

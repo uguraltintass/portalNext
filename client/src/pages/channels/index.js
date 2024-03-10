@@ -52,12 +52,12 @@ function AllChannelsPage() {
     return (
         <>
             <PageBanner
-                heading='Channels'
-                text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique pariatur et corporis cum vero minus exercitationem veritatis.'
+                heading='Categories'
+                /*text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique pariatur et corporis cum vero minus exercitationem veritatis.'*/
             >
                 {account ? (
                     <Link className='btn btn-primary' to='/create-channel'>
-                        Create a New Channel
+                        Create a New Category
                     </Link>
                 ) : (
                     <ConnectWalletHander />

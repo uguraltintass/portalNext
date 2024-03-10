@@ -82,12 +82,17 @@ function Navbar() {
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/discover'>
-                                    Discover
+                                    Games
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/channels'>
-                                    Channels
+                                    Categories
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink className='nav-link' to='/swap'>
+                                    PortalDex
                                 </NavLink>
                             </li>
                             <li className='nav-item'>

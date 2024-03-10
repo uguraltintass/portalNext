@@ -35,10 +35,10 @@ export const appSettings = {
     copyrightsLink: 'https://codecanyon.net/user/web3monkeys',
 
     /* THE NETWORK RPC URL WHERE YOUR CONTRACTS ARE DEPOLYED ON, CHECK THE EXACT RPC URL FROM HERE https://chainlist.org */
-    rpcUrl: 'http://127.0.0.1:7545',
+    rpcUrl: 'http://34.125.43.50:8545',
 
     /* THE CHAIN ID of NETWORK WHERE YOUR CONTRACTS ARE DEPOLYED ON, GET IT FROM HERE https://chainlist.org */
-    networkId: 5777,
+    networkId: 1708805079301,
 
     /* THE BLOCK SCAN EXPLORER WHRE YOU CAN TRACK THE TRANSACTIONS */
     blockExplorerUrls: 'https://testnet.bscscan.com',
@@ -47,7 +47,7 @@ export const appSettings = {
     currency: 'ETH',
 
     /* THE NATIVE CURRENCY THAT YOUR APP WILL USE FOR GAS FEES */
-    nativeCurrency: 'tBNB',
+    nativeCurrency: 'ETH',
 
     /* IPFS PROJECT ID */
     IPFSProjectID: '2Ftp7QxwtNXcz9MbMZNZzM6HJn7',

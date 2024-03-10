@@ -10,7 +10,7 @@
   "sourceMap": "153:572:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "153:572:5:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\nimport \"../client/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol\";\r\n\r\nlibrary Helper{\r\n    using SafeMath for uint256;\r\n\r\n    function indexOf(uint[] memory self, uint value) internal pure returns (uint) \r\n    {\r\n      for (uint i = 0; i < self.length; i++) if (self[i] == value) return uint(1);\r\n      return uint(0);\r\n    }\r\n\r\n    function calcCommission(uint _price, uint commission)internal pure returns (uint)\r\n    {\r\n        return commission.mul(_price.div(1000));\r\n    }\r\n    \r\n    function calcRefBenefit(uint _price, uint refPrice) internal pure returns(uint _benefit){\r\n        return refPrice.mul(_price.div(2000));\r\n    }     \r\n}\r\n",
-  "sourcePath": "C:\\Users\\Ugur\\Desktop\\Streamlify - v2.0\\contracts\\Helper.sol",
+  "sourcePath": "C:\\Users\\Ugur\\portalNext\\contracts\\Helper.sol",
   "ast": {
     "absolutePath": "project:/contracts/Helper.sol",
     "exportedSymbols": {
@@ -1066,13 +1066,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xe2423Dc6F2396B33fC2AF019e7d8d671CD1147C8",
-      "transactionHash": "0x01d859cf9f64ea90eda3fed0210fc5f6016e57ceaa71eee774461fbbd6c36ade"
+      "address": "0xcFdAf3d62733b6434965210A94451a6D6b543eac",
+      "transactionHash": "0x664774591ceb491709f02e11a1e58b82f5ca371535b319f7bbe4567334ff5256"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-21T19:16:33.103Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-02-16T20:56:31.642Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

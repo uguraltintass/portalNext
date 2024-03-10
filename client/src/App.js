@@ -20,6 +20,7 @@ import ChannelSinglePage from './pages/channel-single';
 import SearchPage from './pages/search';
 import MyListPage from './pages/watchlist';
 import NotFound from './components/NotFound';
+import Swap from './pages/swap';
 
 import * as bootstrap from 'bootstrap';
 import useVideos from './hooks/useVideos';
@@ -43,6 +44,7 @@ function App() {
                     <Route path='/activities' element={<ActivitesPage />} />
                     <Route path='/watchlist' element={<MyListPage />} />
                     <Route path='/channels' element={<AllChannelsPage />} />
+                    <Route path='/swap/*' element={<Swap />} />
                     <Route path='/channels/:slug' element={<ChannelSinglePage />} />
                     <Route path='/faqs' element={<FAQsPage />} />
                     <Route path='/search' element={<SearchPage />} />

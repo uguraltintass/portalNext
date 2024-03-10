@@ -60,12 +60,12 @@ function DiscoverPage() {
     return (
         <>
             <PageBanner
-                heading='Discover All Videos'
-                text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique pariatur et corporis cum vero minus exercitationem veritatis.'
+                heading='Discover All Games'
+                /*text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, similique pariatur et corporis cum vero minus exercitationem veritatis.'*/
             >
                 <li className='list-inline-item m-1'>
                     <Link className='btn btn-light text-dark' to='/upload/general'>
-                        Upload a Video
+                        Upload a Game
                     </Link>
                 </li>
             </PageBanner>
