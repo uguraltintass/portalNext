@@ -1,0 +1,65 @@
+.heroContainer {
+  width: 100%;
+  margin-top: 250px;
+  height: 700px;
+  position: relative;
+}
+
+.imgContainer {
+  opacity: 0.7;
+  background-image: url("../../images/oyun2.png");
+  background-position: center center;
+  background-size: cover !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tag {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  padding: 0.3rem 0.75rem;
+  position: absolute;
+  left: 70px;
+  top: 300px;
+}
+
+.name {
+  position: absolute;
+  left: 70px;
+  top: 350px;
+  color: #5bffca;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #72f1a7, 0px 0px 15px rgba(114, 225, 8, 0.4);
+  font-family: "Anton", sans-serif;
+}
+
+.title {
+  position: absolute;
+  top: -80px;
+  left: 187.5px;
+  font-size: 2.2rem !important;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+}
+
+.btn {
+  position: absolute;
+  left: 70px;
+  top: 430px;
+  background-color: #72f1a7;
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: #000000;
+  &:hover {
+    background-color: #a2f6c5;
+
+    .imgContainer {
+      opacity: 1 !important;
+    }
+  }
+}
