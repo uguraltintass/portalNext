@@ -21,6 +21,7 @@ import SearchPage from './pages/search';
 import MyListPage from './pages/watchlist';
 import NotFound from './components/NotFound';
 import Swap from './pages/swap';
+import NFTmarket from './pages/nft-market';
 
 import * as bootstrap from 'bootstrap';
 import useVideos from './hooks/useVideos';
@@ -44,6 +45,7 @@ function App() {
                     <Route path='/activities' element={<ActivitesPage />} />
                     <Route path='/watchlist' element={<MyListPage />} />
                     <Route path='/channels' element={<AllChannelsPage />} />
+                    <Route path='/nft-market/*' element={<NFTmarket />} />
                     <Route path='/swap/*' element={<Swap />} />
                     <Route path='/channels/:slug' element={<ChannelSinglePage />} />
                     <Route path='/faqs' element={<FAQsPage />} />

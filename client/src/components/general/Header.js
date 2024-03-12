@@ -91,6 +91,11 @@ function Navbar() {
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
+                                <NavLink className='nav-link' to='/nft-market'>
+                                    MarketPlace
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
                                 <NavLink className='nav-link' to='/swap'>
                                     PortalDex
                                 </NavLink>

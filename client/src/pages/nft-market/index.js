@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom'; // Import Route instead of BrowserRouter
 import RedirectToLocalhost from './RedirectToLocalhost';
 
-const Swap = () => {
+const NFTmarket = () => {
   return (
         <Routes>
             <Route path="/" element={<RedirectToLocalhost />} />
@@ -11,4 +11,4 @@ const Swap = () => {
   );
 };
 
-export default Swap;
+export default NFTmarket;
