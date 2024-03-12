@@ -2,21 +2,19 @@ import React, { useEffect } from "react";
 import { appSettings } from "../../helpers/settings";
 
 // HOOKS
-import useVideos from "../../hooks/useVideos";
+// import useVideos from "../../hooks/useVideos";
 
 // COMPONENTS
+// import HeroSlider from "./HeroSlider";
 import TrendingChannels from "./TrendingChannels";
-import HeroSlider from "./HeroSlider";
+import MostPopularGame from "./MostPopularGame";
 import LatestChannels from "./LatestChannels";
 import LatestFreeVideo from "./LatestFreeVideos";
 import LatestPremiumVideos from "./LatestPremiumVideos";
 
-// STYLES
-import styles from "./styles.module.scss";
-
 function HomePage() {
-  const { allVideos } = useVideos();
-  const sliderVids = allVideos?.filter((vid) => vid.isApproved)?.slice(0, 8);
+  /* const { allVideos } = useVideos();
+  const sliderVids = allVideos?.filter((vid) => vid.isApproved)?.slice(0, 8); */
 
   useEffect(() => {
     document.title = `${appSettings.brandName} | ${appSettings.brandDescription}`;
@@ -25,15 +23,7 @@ function HomePage() {
   return (
     <section>
       {/* <HeroSlider data={sliderVids} /> */}
-      <div className="hero-slide py-5 overflow-hidden">
-        <div className={styles.heroContainer}>
-          <div className={styles.title}>Most Popular Game</div>
-          <div className={styles.imgContainer} />
-          <div className={styles.tag}>Level 1</div>
-          <div className={styles.name}>Perpetual Runaway</div>
-          <div className={`${styles.btn}`}>Play Now</div>
-        </div>
-      </div>
+      <MostPopularGame />
       <TrendingChannels />
       <LatestChannels />
       <LatestPremiumVideos />

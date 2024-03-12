@@ -1,0 +1,133 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-top: -50px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 8rem;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to top,
+      #14141a,
+      rgba(#14141a, 0.5) 40%,
+      rgba(#14141a, 0) 100%
+    );
+  }
+}
+
+.imgContainer {
+  background-image: url("../../images/oyun2.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center center;
+  background-size: cover !important;
+  opacity: 0.6;
+  filter: blur(0.05rem);
+}
+
+.tag {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  padding: 0.3rem 0.75rem;
+  position: absolute;
+  left: 70px;
+  top: 310px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+.name {
+  position: absolute;
+  left: 70px;
+  top: 350px;
+  color: #5bffca;
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #72f1a7, 0px 0px 15px rgba(114, 225, 8, 0.4);
+  font-family: "Anton", sans-serif;
+}
+
+.ratingContainer {
+  position: absolute;
+  left: 70px;
+  top: 470px;
+}
+
+.starsContainer {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: #5bffca !important;
+  }
+}
+
+.rating {
+  font-family: "Anton", sans-serif;
+  margin-right: 0.5rem;
+}
+
+.shortSummary {
+  position: absolute;
+  left: 70px;
+  top: 500px;
+}
+
+.detailsContainer {
+  margin-top: 4rem;
+  padding: 0 70px;
+  margin-bottom: 6rem;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  width: 48%;
+}
+
+.rightContainer {
+  width: 48%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.detailedSummary {
+  margin-top: 0.3rem;
+}
+
+.descriptionsContainer {
+  border-radius: 5px;
+  border: 1px solid #19191e;
+  background-color: #000000;
+  padding: 2rem;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.descriptionName {
+  width: 30%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.descriptionInfo {
+}
