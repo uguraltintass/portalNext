@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './scss/app.scss';
 import 'aos/dist/aos.css';
@@ -23,9 +23,11 @@ import NotFound from './components/NotFound';
 import Swap from './pages/swap';
 import NFTmarket from './pages/nft-market';
 
-import * as bootstrap from 'bootstrap';
-import useVideos from './hooks/useVideos';
-import useWeb3 from './hooks/useWeb3';
+import * as bootstrap from "bootstrap";
+import useVideos from "./hooks/useVideos";
+import useWeb3 from "./hooks/useWeb3";
+import { GameDetailsPage } from "./pages/game-details";
+
 window.bootstrap = bootstrap;
 
 function App() {
@@ -50,6 +52,7 @@ function App() {
                     <Route path='/channels/:slug' element={<ChannelSinglePage />} />
                     <Route path='/faqs' element={<FAQsPage />} />
                     <Route path='/search' element={<SearchPage />} />
+                    <Route path="/:gameName/details" element={<GameDetailsPage />} />
                     <Route path='/features-requests' element={<FeaturesRequestsPage />} />
                     {owner === account && <Route path='/admin' element={<AdminPage />} />}
                     <Route path='/*' element={<NotFound />} />
