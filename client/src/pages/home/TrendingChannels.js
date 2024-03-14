@@ -57,7 +57,14 @@ function TrendingChannels() {
             >
               {channels
                 ?.sort((a, b) => b.subscribers.length - a.subscribers.length)
+                .filter(
+                  (channel) =>
+                    channel.title !== "ÇOK AÇIM" &&
+                    channel.title !== "DERYAR" &&
+                    channel.title !== "aaa"
+                )
                 .map((channel, index) => {
+                  console.log("Channel =>", channel);
                   return (
                     <SwiperSlide key={index}>
                       <div data-aos="fade-up" data-aos-delay={`${index * 100}`}>
