@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import useVideos from "../../hooks/useVideos";
+import Star from "./Star";
 
 import styles from "./styles.module.scss";
-import Star from "./Star";
+import MovieBox from "../../components/general/MovieBox";
+import ReactPlayer from "react-player";
 
 const Description = ({ name, info, ...props }) => {
   return (
@@ -13,6 +17,27 @@ const Description = ({ name, info, ...props }) => {
 };
 
 const GameDetailsPage = () => {
+  const [channelData, setChannelData] = useState([]);
+  const { contract, channels, loadSingleVideo, videoSingleData } = useVideos();
+  const slug = "card4";
+
+  console.log("channels =>", channels);
+
+  useEffect(() => {
+    if (channels?.length > 0) {
+      setChannelData(channels?.filter((channel) => channel?.slug === slug));
+    }
+  }, [channels, slug]);
+
+  useEffect(() => {
+    if (contract && channels.length > 0) {
+      loadSingleVideo(contract, Number(3));
+    }
+  }, [contract, channels]);
+
+  console.log("channel data =>", channelData);
+  const src = videoSingleData?.src;
+
   return (
     <>
       <div className={styles.mainContainer}>
@@ -23,8 +48,8 @@ const GameDetailsPage = () => {
           <div className={styles.ratingContainer}>
             <div className={styles.starsContainer}>
               <span className={styles.rating}>5.0</span>
-              {Array.from({ length: 5 }, (_) => (
-                <Star />
+              {Array.from({ length: 5 }, (_, index) => (
+                <Star key={index} />
               ))}
             </div>
           </div>
@@ -39,7 +64,7 @@ const GameDetailsPage = () => {
           className={styles.aboutContainer}
           style={{ alignItems: "flex-start" }}
         >
-          <div className={styles.leftContainer}>
+          <div className={styles.leftContainer} data-aos="fade-up">
             <div className={styles.title}>About the game</div>
             <div className={styles.detailedSummary}>
               Experience perpetual motion in the heart-pounding world of
@@ -49,7 +74,7 @@ const GameDetailsPage = () => {
               the ultimate adrenaline rush in Perpetual Runaway!
             </div>
           </div>
-          <div className={styles.rightContainer}>
+          <div className={styles.rightContainer} data-aos="fade-up">
             <div className={styles.descriptionsContainer}>
               <Description name="Theme" info="Infinite Run" />
               <Description name="Genre" info="Runaway" />
@@ -62,7 +87,7 @@ const GameDetailsPage = () => {
           </div>
         </div>
         <div className={styles.aboutContainer} style={{ marginTop: "4rem" }}>
-          <div className={styles.leftContainer}>
+          <div className={styles.leftContainer} data-aos="fade-up">
             <div className={styles.title}>Game overview</div>
             <div className={styles.detailedSummary}>
               In Perpetual Runaway, players dive into the thrill of endless
@@ -73,7 +98,18 @@ const GameDetailsPage = () => {
               experience that keeps players hooked to the screen.
             </div>
           </div>
-          <div className={styles.rightContainer}>Video should be here</div>
+          <div className={styles.rightContainer}>
+            <div className="px-5 mt-5" data-aos="fade-up">
+              <div className="video-mockup">
+                <ReactPlayer
+                  url={src}
+                  controls={true}
+                  width="100%"
+                  height="auto"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
