@@ -41,7 +41,7 @@ const GameDetailsPage = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-        <div className={styles.container}>
+        <div className={styles.container} data-aos="fade-down">
           <div className={styles.imgContainer} />
           <div className={styles.tag}>On PortalNext</div>
           <div className={styles.name}>Perpetual Runaway</div>
