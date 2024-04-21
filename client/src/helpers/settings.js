@@ -17,16 +17,16 @@ export const appSettings = {
     logoWidth: '140',
 
     /* APP BRAND NAME - USED IN ALL PAGES & META TAGE - CHANGE TO YOUR OWN BRAND NAME*/
-    brandName: 'PortalNext',
+    brandName: 'CRACK',
 
     /* APP BRAND DESCRIPTION - USED IN HOME PAGE & META TAGS - PUT A SENTENCE THAT DESCRIBE YOUR APP*/
     brandDescription: 'Next Generation Entertainment',
 
     /* APP AUTHOR - CHANGE IT IF YOU HAVE A LICENSE KEY OR PURCHASE CODE */
-    marketplaceAuthor: 'PortalNext Inc.',
+    marketplaceAuthor: 'CRACK Inc.',
 
     /* COPYRIGHTS BRAND NAME */
-    copyrightsBrand: 'PortalNext Inc.',
+    copyrightsBrand: 'CRACK Inc.',
 
     /* TEXT IDENTIFIER FOR THE NETWORK WHERE THE APP IS UP AND RUNNING, YOU CAN WRITE WHATEVER YOU WANT */
     activeNetworkName: 'Ganache Local Server',
