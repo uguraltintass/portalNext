@@ -43,7 +43,7 @@ const GameDetailsPage = () => {
       <div className={styles.mainContainer}>
         <div className={styles.container} data-aos="fade-down">
           <div className={styles.imgContainer} />
-          <div className={styles.tag}>On PortalNext</div>
+          <div className={styles.tag}>On CRACK</div>
           <div className={styles.name}>Perpetual Runaway</div>
           <div className={styles.ratingContainer}>
             <div className={styles.starsContainer}>
@@ -78,10 +78,10 @@ const GameDetailsPage = () => {
             <div className={styles.descriptionsContainer}>
               <Description name="Theme" info="Infinite Run" />
               <Description name="Genre" info="Runaway" />
-              <Description name="Developer" info="PortalNext" />
+              <Description name="Developer" info="CRACK" />
               <Description name="Available for" info="All Platforms" />
-              <Description name="Blockchain" info="Next" />
-              <Description name="Tokens" info="Portal Token" />
+              <Description name="Blockchain" info="Polygon" />
+              <Description name="Tokens" info="$CRACK" />
               <Description name="Co-op" info="No" style={{ marginBottom: 0 }} />
             </div>
           </div>

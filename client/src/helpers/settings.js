@@ -11,16 +11,16 @@ import { GiMadScientist } from 'react-icons/gi';
 
 export const appSettings = {
     /* APP MAIN LOGO - REPLACE IT FROM THE PUBLIC FOLDER */
-    logo: '/favicon4.png',
+    logo: '/favicon7.png',
 
     /* APP MAIN LOGO WIDTH - CHANGE IT ACCORDING TO YOUR OWN LOGO */
-    logoWidth: '140',
+    logoWidth: '225',
 
     /* APP BRAND NAME - USED IN ALL PAGES & META TAGE - CHANGE TO YOUR OWN BRAND NAME*/
     brandName: 'CRACK',
 
     /* APP BRAND DESCRIPTION - USED IN HOME PAGE & META TAGS - PUT A SENTENCE THAT DESCRIBE YOUR APP*/
-    brandDescription: 'Next Generation Entertainment',
+    brandDescription: 'The Next-Gen Entertainment Portal',
 
     /* APP AUTHOR - CHANGE IT IF YOU HAVE A LICENSE KEY OR PURCHASE CODE */
     marketplaceAuthor: 'CRACK Inc.',

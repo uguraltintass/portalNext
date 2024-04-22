@@ -7,7 +7,7 @@ const RedirectToLocalhost = () => {
   const navigate = useNavigate ();
 
   useEffect(() => {
-    window.open('http://localhost:3000', '_blank');
+    window.open('https://crackportal.io/swap', '_blank');
   }, []);
 
   return null; // Since this component only redirects, it doesn't render anything
