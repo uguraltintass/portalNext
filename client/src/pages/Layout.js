@@ -157,9 +157,9 @@ function Layout() {
   return (
     <>
       <div className="app">
-        {window.ethereum && networkId !== appSettings.networkId && (
+        {/* {window.ethereum && networkId !== appSettings.networkId && (
           <NetworkAlert />        
-        )}
+        )} */}
         <Header />
         <div
           id="main"
