@@ -11,7 +11,7 @@ import { GiMadScientist } from 'react-icons/gi';
 
 export const appSettings = {
     /* APP MAIN LOGO - REPLACE IT FROM THE PUBLIC FOLDER */
-    logo: '/favicon7.png',
+    logo: '/cracklogo.png',
 
     /* APP MAIN LOGO WIDTH - CHANGE IT ACCORDING TO YOUR OWN LOGO */
     logoWidth: '225',
@@ -20,19 +20,19 @@ export const appSettings = {
     brandName: 'CRACK',
 
     /* APP BRAND DESCRIPTION - USED IN HOME PAGE & META TAGS - PUT A SENTENCE THAT DESCRIBE YOUR APP*/
-    brandDescription: 'The Next-Gen Entertainment Portal',
+    brandDescription: 'The Next Generation Entertainment',
 
     /* APP AUTHOR - CHANGE IT IF YOU HAVE A LICENSE KEY OR PURCHASE CODE */
-    marketplaceAuthor: 'CRACK Inc.',
+    marketplaceAuthor: 'CRACK Technology Inc.',
 
     /* COPYRIGHTS BRAND NAME */
-    copyrightsBrand: 'CRACK Inc.',
+    copyrightsBrand: 'CRACK Technology Inc.',
 
     /* TEXT IDENTIFIER FOR THE NETWORK WHERE THE APP IS UP AND RUNNING, YOU CAN WRITE WHATEVER YOU WANT */
     activeNetworkName: 'Ganache Local Server',
 
     /* COPYRIGHTS LINK - REPLACE IT IF YOU HAVE A LICENSE KEY OR A PURCHASE CODE */
-    copyrightsLink: 'https://codecanyon.net/user/web3monkeys',
+    copyrightsLink: 'https://crack.technology',
 
     /* THE NETWORK RPC URL WHERE YOUR CONTRACTS ARE DEPOLYED ON, CHECK THE EXACT RPC URL FROM HERE https://chainlist.org */
     rpcUrl: 'http://34.125.43.50:8545',

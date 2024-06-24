@@ -87,39 +87,39 @@ function Navbar() {
             <ul className="navbar-nav mx-auto navbar-nav-custom">
             <li className='nav-item'>
                 <NavLink className='nav-link' to='/' end>
-                    Home
+                    HOME
                 </NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink className='nav-link' to='/discover'>
-                    Games
+                    GAME HUB
                 </NavLink>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
                 <NavLink className='nav-link' to='/channels'>
                     Categories
                 </NavLink>
-            </li>
+            </li> */}
             <li className='nav-item'>
                 <NavLink className='nav-link' to='/nft-market'>
-                    NFT
+                    NFT MARKETPLACE
                 </NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink className='nav-link' to='/swap'>
-                    Swap
+                    DEX
                 </NavLink>
             </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/activities">
-                  Activity
+                  ACTIVITY
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink className="nav-link" to="/faqs">
                   FAQs
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink className="nav-link" to="/search">
                   <FiSearch

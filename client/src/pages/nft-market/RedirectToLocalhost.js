@@ -7,7 +7,7 @@ const RedirectToLocalhost = () => {
   const navigate = useNavigate ();
 
   useEffect(() => {
-    window.open('https://crackportal.io/nft-market', '_blank');
+    window.open('http://localhost:3002/', '_blank');
   }, []);
 
   return null; // Since this component only redirects, it doesn't render anything

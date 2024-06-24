@@ -80,7 +80,7 @@ const GameDetailsPage = () => {
               <Description name="Genre" info="Runaway" />
               <Description name="Developer" info="CRACK" />
               <Description name="Available for" info="All Platforms" />
-              <Description name="Blockchain" info="Polygon" />
+              <Description name="Blockchain" info="Avalanche" />
               <Description name="Tokens" info="$CRACK" />
               <Description name="Co-op" info="No" style={{ marginBottom: 0 }} />
             </div>

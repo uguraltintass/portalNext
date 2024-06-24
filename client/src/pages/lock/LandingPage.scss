@@ -1,0 +1,35 @@
+.landing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); // Semi-transparent background
+  z-index: 999999; // High z-index to cover everything
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto; // Prevent interaction with elements below
+}
+
+.app-content {
+  pointer-events: none; // Disable interaction beneath the landing page
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(123, 114, 114, 0.148); // Lightly opaque for content visibility
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); // Optional: Adds subtle shadow for depth
+  pointer-events: auto; // Ensure this content is interactive
+}
+
+.logo-link {
+  display: block;
+  background: url('/x_logo.png') no-repeat center center; // Update with actual path
+  width: 50px; // Adjust size as needed
+  height: 100px; // Adjust size as needed
+  background-size: contain;
+  margin: 20px auto;
+}

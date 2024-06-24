@@ -17,19 +17,19 @@ function LatestChannels() {
                 <div className='container pb-5'>
                     <h2 className='text-lg lh-1 mb-3 d-flex align-items-center'>
                         <MdScreenShare size='3.5rem' className='text-primary' />
-                        <span className='ms-2'>Latest Games</span>
+                        <span className='ms-2'>Stage-1-</span>
                     </h2>
                     <div className='row mb-4'>
                         <div className='col-lg-6'>
                             <p className='text-muted'>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aliquam libero nam
-                                similique, et, laborum vitae qui porro at minus non.
+                                {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aliquam libero nam
+                                similique, et, laborum vitae qui porro at minus non. */}
                             </p>
                         </div>
                     </div>
 
                     {channels?.sort((a, b) => b.createdAt - a.createdAt)?.length === 0 && (
-                        <p className='lead'>There's no channels at the moment</p>
+                        <p className='lead'>Coming Soon..</p>
                     )}
 
                     <div className='swiper-slow swiper-wrapper-padding'>

@@ -27,14 +27,19 @@ import * as bootstrap from "bootstrap";
 import useVideos from "./hooks/useVideos";
 import useWeb3 from "./hooks/useWeb3";
 import { GameDetailsPage } from "./pages/game-details";
+import LandingPage from "./pages/lock/LandingPage";
 
 window.bootstrap = bootstrap;
 
 function App() {
     const { owner } = useVideos();
     const { account } = useWeb3();
+    
     return (
         <BrowserRouter>
+            <div> 
+            <LandingPage />
+            <div className="app-content">
             <Routes>
                 <Route element={<Layout />}>
                     <Route exact path='/' element={<HomePage />} />
@@ -58,6 +63,8 @@ function App() {
                     <Route path='/*' element={<NotFound />} />
                 </Route>
             </Routes>
+            </div>
+            </div>
         </BrowserRouter>
     );
 }

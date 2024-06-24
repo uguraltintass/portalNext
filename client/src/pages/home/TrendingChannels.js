@@ -34,7 +34,7 @@ function TrendingChannels() {
 
           {channels?.sort((a, b) => b.subscribers.length - a.subscribers.length)
             ?.length === 0 && (
-            <p className="lead">There's no channels at the moment</p>
+            <p className="lead">Coming Soon..</p>
           )}
 
           <div className="swiper-slow swiper-wrapper-padding">
