@@ -11,7 +11,7 @@ import { GiMadScientist } from 'react-icons/gi';
 
 export const appSettings = {
     /* APP MAIN LOGO - REPLACE IT FROM THE PUBLIC FOLDER */
-    logo: '/cracklogo.png',
+    logo: '/cracklogosymbol.png',
 
     /* APP MAIN LOGO WIDTH - CHANGE IT ACCORDING TO YOUR OWN LOGO */
     logoWidth: '225',

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); // Semi-transparent background
+  background-color: rgba(0, 0, 0, 0.637); // Semi-transparent background
   z-index: 999999; // High z-index to cover everything
   display: flex;
   justify-content: center;
@@ -20,14 +20,23 @@
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(123, 114, 114, 0.148); // Lightly opaque for content visibility
+  background-color: rgba(158, 147, 147, 0.313); // Lightly opaque for content visibility
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); // Optional: Adds subtle shadow for depth
   pointer-events: auto; // Ensure this content is interactive
 }
 
-.logo-link {
+.x-link {
   display: block;
-  background: url('/x_logo.png') no-repeat center center; // Update with actual path
+  background: url("/x_logo.png") no-repeat center center; // Update with actual path
+  width: 50px; // Adjust size as needed
+  height: 100px; // Adjust size as needed
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.telegram-link {
+  display: block;
+  background: url('/telegramlogo.png') no-repeat center center; // Update with actual path
   width: 50px; // Adjust size as needed
   height: 100px; // Adjust size as needed
   background-size: contain;
